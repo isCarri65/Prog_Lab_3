@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Practico 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h3>Navegador</h3>
+        <nav>
+            <ul>
+                <li><a href="MiSitioWeb.html">Sitio Web</a></li>
+                <li><a href="#form_1">Formulario</a></li>
+                <li><a href="#foot">Pie de Página</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>1. Estructura Básica del Documento HTML</h1>
+    <p>Este documento HTML tiene una estructura basica que incluye la declaracion DOCTYPE, etiquetas de metadatos y unæ</p>
+
+    <h1>Practicando HTML </h1>
+    <h2>Titulo Secundario </h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+
+
+    <h2>2. Encabezados y Propiedades de texto</h1>
+    <P style="font-weight: bold;">Este es un texto en negrita</P>
+    <p style="font-style: italic;">Este es un texto en cursiva</p>
+    <p style="text-decoration: underline ;">Este es un texto subrayado</p>
+
+
+    <h2>3. Divisiones y Agrupación de Contenido</h3>
+    <div>
+        <section>
+            <h3>Sección 1</h3>
+            <p>Contenido  de la primera sección agrupada en un div</p>
+        </section>
+    </div>
+    <div>
+        <section>
+            <h3>Sección 2</h3>
+            <p>Contenido de la segunda sección agrupada en un div</p>
+        </section> 
+    </div>
+
+    <h2>4. Enlaces y Listas</h2>
+    
+    <p>Visita nuestro sitio web: <a href="MiSitioWeb.html">Sitio Web</a> para más iformación</p>
+
+    <p>Enlaces internos:</p>
+    <a href="#media_1">Ir a Multimedia</a><br>
+    <a href="#table_1">Ir a Tablas</a><br>
+    <a href="#form_1">Ir a Formulario</a>
+
+
+    <p>Lista Desordenada:</p>
+    <ul>
+        <li>Primer item de una lista desordenada</li> 
+        <li>Segundo item de una lista desordenada</li> 
+    </ul>
+    <p>Lista Ordenada:</p>
+    <ol>
+        <li>Primer item de una lista ordenada</li> 
+        <li>Segundo item de una lista ordenada</li> 
+    </ol>
+    <a name="media_1"></a>
+    <h2>5. Elementos multimedia</h2>
+    <img alt="Imagen de mario" width="300px" src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg">
+    <video controls width="250px" src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"></video>
+    <audio controls src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"></audio>
+    
+    <a name="table_1"></a>
+    <h2>6. Tablas</h2>
+
+    <table border="bold">
+        <thead>
+            <th>Columna 1</th><th>Columna 2</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>dato 1</td><td>dato 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a name="form_1"></a>
+    <h2>7. Formularios</h2>
+    <form>
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name_1" pattern="[a-zA-Z]{2,}" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email_1">
+            
+            <label for="text_area">Mensaje</label>
+            <textarea name="text_area"></textarea>
+            
+            <button type="submit">enviar</button>
+        </div>
+    </form>
+    <footer>
+        <br> <br>
+        <P>Contáctanos</P>
+        <p>Redes Sociales:</p>
+        <ul>
+            <li><a href="cuenta_de youtube">Youtube</a></li>
+            <li><a href="Ig">Instragram</a></li>
+            <li><a href="facebook">Facebook</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+:root {
+    --bgColor: #f4f4f4;
+    --bgColorTexto: #fff;
+    --bgColorOscuro: #333;
+    --bgColorBanner: #ff5733
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bgColor);
+    width: 100%;
+    height: 100%;
+}
+header {
+    background-color: var(--bgColorOscuro);
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    display: flex;
+    color: var(--bgColorTexto);
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+.nav_title {
+    font-size: 2rem;
+}
+.nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.4rem;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: var(--bgColorTexto);
+    padding: 0.4rem;
+    transition: background-color 0.3s ease;
+}
+.nav_link:hover {
+    background-color: #555;
+    border-radius: 0.4rem;
+
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4vh;
+
+}
+.main-content-two{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+
+}
+
+.banner_main {
+    background-color: var(--bgColorBanner);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    color: var(--bgColorTexto);
+    border-radius: 0.4rem;
+    padding: 2rem 1.2rem;
+
+}
+
+.banner_title {
+    font-size: 2.5rem;
+}
+
+.banneer_description {
+    font-size: 1.5rem;
+
+}
+.banner_button {
+    background-color: var(--bgColorOscuro);
+    color: var(--bgColorTexto);
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.4rem;
+
+}
+.banner_button:hover {
+
+}
+.feature_section{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.feature_title{
+
+}
+.feature_content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.feature {
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    
+}
+
+.footer-content{
+    background-color: var(--bgColorOscuro);
+    color: var(--bgColorTexto);
+    margin-bottom: 0;
+
+}
