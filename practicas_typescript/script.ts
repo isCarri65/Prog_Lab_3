@@ -98,19 +98,13 @@ class Cubo {
 const box:HTMLElement|null = document.getElementById("box-movil")
 const box_conteiner:HTMLElement|null = document.getElementById("box-conteiner")
 
-
-function validarCubo(cubo:HTMLElement|null){
-    if (box_conteiner && box) {
-        let cubo = new Cubo(box_conteiner,box,10)
-        return cubo
-    }
-}
-
-const cubo = validarCubo(box)
+if (box_conteiner && box) {
+    
+const cubo = new Cubo(box_conteiner,box,10)
  
 document.addEventListener("keydown", (ev)=>{
     if("ArrowUp"==ev.key){
-        cubo.moverArriva();
+        cubo?.moverArriva();
     }
     if("ArrowDown"==ev.key){
         cubo.moverAbajo();
@@ -123,4 +117,6 @@ document.addEventListener("keydown", (ev)=>{
     }
    
 })
+    
+}
 console.log("hola")
